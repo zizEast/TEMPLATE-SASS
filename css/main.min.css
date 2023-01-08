@@ -7,6 +7,25 @@
           box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+}
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 9px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 11px;
+  }
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -76,7 +95,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
-@media screen and (max-width: screen-sm-max) {
+@media screen and (max-width: 576px) {
   .grid-33 {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -90,13 +109,13 @@
   -ms-grid-columns: (1fr)[4];
   grid-template-columns: repeat(4, 1fr);
 }
-@media screen and (max-width: screen-lg-max) {
+@media screen and (max-width: 992px) {
   .grid-25 {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
   }
 }
-@media screen and (max-width: screen-sm-max) {
+@media screen and (max-width: 576px) {
   .grid-25 {
     gap: 3rem;
     -ms-grid-columns: 1fr;
@@ -112,7 +131,7 @@
   grid-template-columns: repeat(2, 1fr);
   height: 100%;
 }
-@media screen and (max-width: screen-lg-max) {
+@media screen and (max-width: 992px) {
   .grid-50 {
     gap: 2rem;
     -ms-grid-columns: 1fr;
@@ -122,5 +141,6 @@
 
 header {
   background-color: #fff;
+  height: 7.3rem;
 }
 /*# sourceMappingURL=main.min.css.map */

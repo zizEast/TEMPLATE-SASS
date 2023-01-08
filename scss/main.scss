@@ -1,12 +1,13 @@
-@import './reset';
 @import './variables';
 @import './mixins';
+@import './reset';
 @import './helpers';
 
 
 
 header{
     background-color: $color-white;
+    height: 7.3rem;
 }
 
 

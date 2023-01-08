@@ -5,3 +5,19 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+html{
+    font-size: 10px;
+
+    @include respond(sm){
+        font-size: 8px;
+    }
+
+    @include respond(md){
+        font-size: 9px;
+    }
+
+    @include respond(xl){
+        font-size: 11px;
+    }
+}
