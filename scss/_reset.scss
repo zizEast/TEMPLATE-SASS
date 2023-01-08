@@ -22,9 +22,16 @@ html{
     }
 }
 
+a{
+    text-decoration: none;
+}
+
+
+
 
 body{
     font-size: $default-font-size;
     background-color: $color-background;
     min-height: 100vh;
+    color: $color-text;
 }
