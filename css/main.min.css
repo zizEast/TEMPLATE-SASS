@@ -26,6 +26,13 @@ html {
   }
 }
 
+body {
+  font-size: 1.6rem;
+  background-color: #f1f5fa;
+  min-height: 100vh;
+  line-height: 1.7rem;
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;

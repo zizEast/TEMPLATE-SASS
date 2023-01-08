@@ -21,3 +21,10 @@ html{
         font-size: 11px;
     }
 }
+
+
+body{
+    font-size: $default-font-size;
+    background-color: $color-background;
+    min-height: 100vh;
+}
