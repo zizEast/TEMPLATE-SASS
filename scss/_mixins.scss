@@ -1,0 +1,55 @@
+
+$screen-sm-max:576px;
+$screen-md-max:768px;
+$screen-lg-max:992px;
+$screen-xl-max:1200px;
+
+//GESTIONE BREAKPOINTS
+@mixin respond($breakpoint){
+  @if $breakpoint == sm{
+    @media screen and (max-width: screen-sm-max) {@content;}
+  }
+  @if $breakpoint == md {
+    @media screen and (max-width: screen-md-max) {@content;}
+  }
+  @if $breakpoint == lg {
+    @media screen and (max-width: screen-lg-max) {@content;}
+  }
+  @if $breakpoint == xl {
+    @media screen and (max-width: screen-xl-max) {@content;}
+  }
+}
+
+//MIXIN PER FLEX E GRID
+
+
+
+@mixin flex($justify,$align:center,$direction:row,$wrap:nowrap){
+  display: flex;
+  flex-direction: direction;
+  justify-content: justify;
+  align-items: align;
+}
+
+@mixin grid($columns,$gap:0){
+  display: grid;
+  grid-template-columns: $columns;
+  gap: $gap;
+
+  @include respond(tab-port){
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include respond(phone){
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+
+
+
