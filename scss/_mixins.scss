@@ -26,9 +26,10 @@ $screen-xl-min:1600px;
 
 @mixin flex($justify,$align:center,$direction:row,$wrap:nowrap){
   display: flex;
-  flex-direction: direction;
-  justify-content: justify;
-  align-items: align;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
 }
 
 @mixin grid($columns,$gap:0){
