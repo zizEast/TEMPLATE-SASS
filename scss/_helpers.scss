@@ -69,5 +69,13 @@
 }
 
 
+.container{
+    max-width: $grid-max-width;
+    margin: 0 auto;
+}
+
+section{
+    padding: 0 1.6rem;
+}
 
 

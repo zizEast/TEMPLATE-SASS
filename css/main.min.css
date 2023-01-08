@@ -35,6 +35,7 @@ body {
   background-color: #f1f5fa;
   min-height: 100vh;
   color: #001632;
+  overflow-x: hidden;
 }
 
 .flex {
@@ -150,8 +151,37 @@ body {
   }
 }
 
+.container {
+  max-width: 94rem;
+  margin: 0 auto;
+}
+
+section {
+  padding: 0 16px;
+}
+
 header {
   background-color: #fff;
-  height: 7.3rem;
+  padding: 1.6rem 8rem;
+}
+@media screen and (max-width: 992px) {
+  header {
+    padding: 1.6rem;
+  }
+}
+header .nav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: direction;
+          flex-direction: direction;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: justify;
+  -webkit-box-align: align;
+      -ms-flex-align: align;
+          align-items: align;
 }
 /*# sourceMappingURL=main.min.css.map */

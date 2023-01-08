@@ -7,7 +7,16 @@
 
 header{
     background-color: $color-white;
-    height: 7.3rem;
+    padding: 1.6rem 8rem;
+
+    @include respond(lg){
+        padding: 1.6rem;
+    }
+    .nav{
+        .container{
+            @include flex(space-between);
+        }
+    }
 }
 
 
