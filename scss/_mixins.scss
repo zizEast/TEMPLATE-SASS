@@ -36,11 +36,11 @@ $screen-xl-max:1200px;
   grid-template-columns: $columns;
   gap: $gap;
 
-  @include respond(tab-port){
+  @include respond(lg){
     grid-template-columns: 1fr 1fr;
   }
 
-  @include respond(phone){
+  @include respond(sm){
     grid-template-columns: 1fr;
   }
 }

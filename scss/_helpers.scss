@@ -39,7 +39,7 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 20px;
-    @include respond(tab-port){
+    @include respond(sm){
         grid-template-columns: 1fr;
     }
 }
@@ -48,10 +48,10 @@
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(4,1fr);
-    @include respond(tab-port){
+    @include respond(lg){
         grid-template-columns: 1fr 1fr;
     }
-    @include respond(phone){
+    @include respond(sm){
         gap: 3rem;
         grid-template-columns: 1fr;
     }
@@ -62,7 +62,7 @@
     gap: 1rem;
     grid-template-columns: repeat(2,1fr);
     height: 100%;
-    @include respond(tab-port){
+    @include respond(lg){
         gap: 2rem;
         grid-template-columns: 1fr;
     }
