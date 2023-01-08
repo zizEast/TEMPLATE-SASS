@@ -30,6 +30,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 body {
   font-size: 1.6rem;
   background-color: #f1f5fa;
@@ -157,7 +162,7 @@ body {
 }
 
 section {
-  padding: 0 16px;
+  padding: 0 1.6rem;
 }
 
 header {
@@ -183,5 +188,8 @@ header .nav .container {
   -webkit-box-align: align;
       -ms-flex-align: align;
           align-items: align;
+}
+header .nav-logo {
+  width: 13.3rem;
 }
 /*# sourceMappingURL=main.min.css.map */

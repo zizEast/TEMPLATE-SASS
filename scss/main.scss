@@ -16,6 +16,18 @@ header{
         .container{
             @include flex(space-between);
         }
+
+        &-logo{
+            width:13.3rem;
+        }
+
+        &-list{}
+
+        &-item{}
+
+        &-link{}
+
+        &-btn{}
     }
 }
 
